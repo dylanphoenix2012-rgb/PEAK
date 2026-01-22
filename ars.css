@@ -13,11 +13,11 @@ body {
     overflow-x: hidden;
 }
 
-@font-face { font-family: Proxima Nova Regular; src: url('Proxima Nova Regular.ttf'); }
-@font-face { font-family: Proxima Nova Light; src: url('Proxima Nova Light.ttf'); }
-@font-face { font-family: Proxima Nova Extrabold; src: url('Proxima Nova Extrabold.ttf'); }
-@font-face { font-family: Proxima Nova Semibold; src: url('Proxima Nova Semibold.ttf'); } 
-@font-face { font-family: ProximaNovaComExBold; src: url('ProximaNovaExBold.ttf'); }
+@font-face { font-family: Proxima Nova Regular; src: url('Proxima-Nova-Regular.ttf'); }
+@font-face { font-family: Proxima Nova Light; src: url('Proxima-Nova-Light.ttf'); }
+@font-face { font-family: Proxima Nova Extrabold; src: url('Proxima-Nova-Extrabold.ttf'); }
+@font-face { font-family: Proxima Nova Semibold; src: url('Proxima-Nova-Semibold.ttf'); } 
+@font-face { font-family: ProximaNovaComExBold; src: url('ProximaNovaComExBold.ttf'); }
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -38,7 +38,7 @@ body {
 }
 
 .nav {
-    font-family: Proxima Nova Extrabold, sans-serif;
+    font-family: Proxima-Nova-Extrabold, sans-serif;
     font-weight: 1000;
     margin-right: 600px;
     display: flex;
@@ -108,7 +108,7 @@ body {
 }
 
 .Short-Description h1 {
-    font-family: 'Proxima Nova Extrabold', sans-serif;
+    font-family: 'Proxima-Nova-Extrabold', sans-serif;
     font-size: 100px;
     color: #FFD700;
     width: min-content;
@@ -118,7 +118,7 @@ body {
 
 .Short-Description a {
     display: flex;
-    font-family: 'Proxima Nova Regular', sans-serif;
+    font-family: 'Proxima-Nova-Regular', sans-serif;
     font-size: 35px;
     color: white;
     text-align: justify;
@@ -142,7 +142,7 @@ body {
   padding: 12px 16px;
   z-index: 1;
   color: white;
-  font-family: 'Proxima Nova Regular', sans-serif;
+  font-family: 'Proxima-Nova-Regular', sans-serif;
   font-size: 20px;
 }
 
