@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@font-face { font-family: Proxima Nova Regular; src: url('Proxima Nova Regular.TTF'); }
+@font-face { font-family: Proxima Nova Light; src: url('Proxima Nova Light.TTF'); }
+@font-face { font-family: Proxima Nova Extrabold; src: url('Proxima Nova Extrabold.TTF'); }
+@font-face { font-family: Proxima Nova Semibold; src: url('Proxima Nova Semibold.TTF'); } 
+@font-face { font-family: ProximaNovaComExBold; src: url('ProximaNovaExBold.TTF'); }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: -5px;
+    background-color: rgba(75, 80, 122, 0.2);
+    width: 100%;
+}
+
+.Name {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 25px;
+    margin-left: 250px;
+    background-color: rgba(18, 21, 43, 0.5);
+    padding: 6px 15px;
+    width: max-content;
+}
+
+.nav {
+    font-family: Proxima Nova Extrabold, sans-serif;
+    font-weight: 1000;
+    margin-right: 600px;
+    display: flex;
+    gap: 60px;
+    font-size: 35px;
+    color: white;
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: transform 0.4s ease, color 0.5s ease;
+}
+
+.nav a:hover { 
+    color: #FFD700;
+    cursor: pointer;
+    transition: 0.8s;
+    transform: translateY(-2.5px);
+}
+
+.intro {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.intro h1 {
+    font-family: ProximaNovaComExBold, sans-serif;
+    font-size: 50px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+
+.arrowhead {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.arrowhead img {
+    animation: description 4s ease-in-out infinite;
+}
+
+@keyframes description {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+
+
+.content {
+    background-color: rgba(17, 21, 49, 0.925);
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    width: 100%;
+    margin-top: 30vh; 
+}
+
+.Short-Description {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.Short-Description h1 {
+    font-family: 'Proxima Nova Extrabold', sans-serif;
+    font-size: 100px;
+    color: #FFD700;
+    width: min-content;
+    line-height: 0.8;
+    text-shadow: 10px 8px 12.5px rgb(0, 0, 0, 0.95);
+}
+
+.Short-Description a {
+    display: flex;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 35px;
+    color: white;
+    text-align: justify;
+    width: 1325px; 
+    font-weight: 300;
+    line-height: 27px;
+    text-shadow: 10px 8px 12.5px rgb(0, 0, 0, 0.95);
+}
+
+.drop {
+  position: relative;
+  display: inline-block;
+}
+
+.dropstuff {
+  display: none;
+  position: absolute;
+  background-color: rgba(18, 21, 43, 0.95);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  color: white;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-size: 20px;
+}
+
+.dropstuff a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.dropstuff a:hover {
+    background-color: rgba(75, 80, 122, 0.5);
+    color: #FFD700;
+}
+
+.drop:hover .dropstuff {
+    display: block;
+}
+
+#background-video {
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    z-index: -1;
+}
