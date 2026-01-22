@@ -13,12 +13,11 @@ body {
     overflow-x: hidden;
 }
 
-@font-face { font-family: Proxima Nova Regular; src: url('Proxima Nova Regular.TTF'); }
-@font-face { font-family: Proxima Nova Light; src: url('Proxima Nova Light.TTF'); }
-@font-face { font-family: Proxima Nova Extrabold; src: url('Proxima Nova Extrabold.TTF'); }
-@font-face { font-family: Proxima Nova Semibold; src: url('Proxima Nova Semibold.TTF'); } 
-@font-face { font-family: ProximaNovaComExBold; src: url('ProximaNovaExBold.TTF'); }
-
+@font-face { font-family: Proxima Nova Regular; src: url('Proxima Nova Regular.ttf'); }
+@font-face { font-family: Proxima Nova Light; src: url('Proxima Nova Light.ttf'); }
+@font-face { font-family: Proxima Nova Extrabold; src: url('Proxima Nova Extrabold.ttf'); }
+@font-face { font-family: Proxima Nova Semibold; src: url('Proxima Nova Semibold.ttf'); } 
+@font-face { font-family: ProximaNovaComExBold; src: url('ProximaNovaExBold.ttf'); }
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
